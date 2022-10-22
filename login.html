@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Student Portal | Sign In</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="login.js"></script>
+  </head>
+  <body>
+    <form onsubmit="event.preventDefault(); onFormSubmit();">
+      <div class="container">
+        <h1>Sign In</h1>
+
+        <br />
+        <label for="email"><b>Email</b></label>
+        <input id="email" type="email" placeholder="Enter Email" name="email" required />
+        <br />
+        <label for="psw"><b>Password</b></label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter Password"
+          name="psw"
+          required
+        />
+        <br />
+        <div id="errormsg" style="color: red;"></div>
+        <div class="clearfix">
+          <button id="submitbtn" type="submit">Sign In</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

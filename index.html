@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Student Portal | Sign Up</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="register.js"></script>
+  </head>
+  <body>
+    <form onsubmit="event.preventDefault(); onFormSubmit();">
+      <div class="container">
+        <h1>Sign Up</h1>
+
+        <label for="roll"><b>University Roll</b></label>
+        <input
+          type="text"
+          name="roll"
+          placeholder="Enter University Roll"
+          required
+          id="roll"
+        />
+        <br />
+        <label for="name"><b>Name</b></label>
+        <input id="fullname" type="text" name="name" placeholder="Enter Name" required />
+
+        <br />
+        <label for="email"><b>Email</b></label>
+        <input id="email" type="email" placeholder="Enter Email" name="email" required />
+        <br />
+        <label for="psw"><b>Password</b></label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter Password"
+          name="psw"
+          required
+        />
+        <br />
+
+        <div class="clearfix">
+          <button id="submitbtn" type="submit">Sign Up</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
