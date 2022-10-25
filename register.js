@@ -11,7 +11,12 @@ function onFormSubmit() {
         "assignment": "Assignment Not Submitted"
     }
     datas = JSON.parse(localStorage.getItem("users"));
-    datas[datas.length] = data
+    if(datas === null){
+        datas = [];
+        datas[0] = data;
+    }
+    else
+        datas[datas.length] = data;
     localStorage.setItem("users", JSON.stringify(datas));
     storedValue = JSON.parse(localStorage.getItem("users"));
     console.log(storedValue)
